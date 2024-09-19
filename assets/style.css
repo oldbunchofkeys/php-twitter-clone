@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button {
+  all: unset;
+  padding: 10px 20px;
+  background-color: coral;
+  cursor: pointer;
+}
+textarea {
+  resize: unset;
+  height: 80px;
+  padding: 10px;
+}
+body {
+  position: relative;
+}
+body.modal-active {
+  background-color: #00000095;
+}
+button#new-post-modal-trigger {
+  display: block;
+  margin: 0 auto;
+}
+#page-view-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.container {
+  padding: 30px;
+}
+nav {
+  padding: 10px;
+}
+body, textarea {
+  font-family: "DM Sans";
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* home page */
+
+#page-home form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  row-gap: 5px;
+}
+
+#page-home form input,
+#page-home form textarea {
+  margin-bottom: 10px;
+}
+#page-home .form-wrapper {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+}
+.hidden {
+  display: none;
+}
+#page-home .form-wrapper form {
+  background-color: #fff;
+  padding: 10px;
+}
+#page-home .form-wrapper {
+  margin-top: -50px;
+}
+#page-home .form-wrapper button.close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: center;
+}
+#page-home .form-wrapper form .body-error {
+  color: #ff0000;
+  min-height: 21px;
+}
+#page-home .form-wrapper form .body-count-warning {
+  background-color: #ffe57f;
+  padding: 5px;
+}
